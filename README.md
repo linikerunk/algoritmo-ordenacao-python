@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # Algoritmo-Ordenacao-Python
 =======
-# Algoritmo-Ordenacao-Python
 
 Este repositório tem o intuito de demostrar o tempo de execução de cada algoritmo 
 de ordenação, esse repositório tem fins académicos, onde o professor Leandro B. S. Marques,
