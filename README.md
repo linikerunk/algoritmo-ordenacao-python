@@ -2,7 +2,7 @@
 =======
 
 Este repositório tem o intuito de demostrar o tempo de execução de cada algoritmo 
-de ordenação, esse repositório tem fins académicos, onde o professor Leandro B. S. Marques,
+de ordenação, tendo fins académicos, onde o professor Leandro B. S. Marques,
 que está lecionando a matéria Complexidade de Algoritmos, propôs uma atividade 
 de Análise de Desempenho de Algoritmos de Ordenação por Comparação.
 
