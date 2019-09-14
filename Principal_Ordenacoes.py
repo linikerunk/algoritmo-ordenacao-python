@@ -139,7 +139,7 @@ while (opcao != 0):
             for v in vetor:
                 print("Vetor ["+ str(v) +"]")
         else:
-            print("Antes de imprimir o vetor gere os números aleatórios através da opção '2'")
+            print("Antes de imprimir o vetor, gere os números aleatórios através da opção '2'")
                 
     elif int(opcao) == 2:
         vetor = [random.randint(0, numeros_dados) for i in range(numeros_dados)]
@@ -149,101 +149,101 @@ while (opcao != 0):
         if numeros_gerados == True:
             vetor = (sorted(vetor, reverse = True))
         else:
-            print(' Erro Gere o Vetor Primeiro..')
+            print(' Erro. Primeiro gere o vetor.')
     elif int(opcao) == 4:
         if numeros_gerados == True:
-            print("\t [Método BubbleSort] VETOR ORDENADO \t")
+            print("\t [Método BubbleSort] Ordenando Vetores \t")
             inicio = time.time()
             BubbleSort(vetor)
             fim = time.time()
             tempototal = fim - inicio
-            print(f"Início = {inicio:.2f} ms\s")
-            print(f"Fim = {fim:.2f} ms\s")
+            print(f"Início = {inicio:.2f} Segundos")
+            print(f"Fim = {fim:.2f} Segundos")
             print(f"Tempo Total = {tempototal:.2f}")
-            print(f" A Ordenação levou {tempototal:.2f} ms\s")
+            print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
-            print(' Erro Gere o Vetor Primeiro..')
+            print(' Erro. Primeiro gere o vetor.')
     elif int(opcao) == 5:
         if numeros_gerados == True:
-            print("\t [Método SelectionSort] VETOR ORDENADO \t")
+            print("\t [Método SelectionSort] Ordenando Vetores \t")
             inicio = time.time()
             SelectionSort(vetor)
             fim = time.time()
             tempototal = fim - inicio
-            print(f"Início = {inicio:.2f} ms\s")
-            print(f"Fim = {fim:.2f} ms\s")
+            print(f"Início = {inicio:.2f} Segundos")
+            print(f"Fim = {fim:.2f} Segundos")
             print(f"Tempo Total = {tempototal:.2f}")
-            print(f" A Ordenação levou {tempototal:.2f} ms\s")
+            print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
-            print(' Erro Gere o Vetor Primeiro..')
+            print(' Erro. Primeiro gere o vetor.')
     elif int(opcao) == 6:
         if numeros_gerados == True:
-            print("\t [Método InsertionSort] VETOR ORDENADO \t")
+            print("\t [Método InsertionSort] Ordenando Vetores \t")
             inicio = time.time()
             InsertionSort(vetor)
             fim = time.time()
             tempototal = fim - inicio
-            print(f"Início = {inicio:.2f} ms\s")
-            print(f"Fim = {fim:.2f} ms\s")
+            print(f"Início = {inicio:.2f} Segundos")
+            print(f"Fim = {fim:.2f} Segundos")
             print(f"Tempo Total = {tempototal:.2f}")
-            print(f" A Ordenação levou {tempototal:.2f} ms\s")
+            print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
-            print(' Erro Gere o Vetor Primeiro..')
+            print(' Erro. Primeiro gere o vetor.')
     elif int(opcao) == 7:
         if numeros_gerados == True:
-            print("\t [Método MergeSort] VETOR ORDENADO \t")
+            print("\t [Método MergeSort] Ordenando Vetores \t")
             inicio = time.time()
             MergeSort(vetor)
             fim = time.time()
             tempototal = fim - inicio
-            print(f"Início = {inicio:.2f} ms\s")
-            print(f"Fim = {fim:.2f} ms\s")
+            print(f"Início = {inicio:.2f} Segundos")
+            print(f"Fim = {fim:.2f} Segundos")
             print(f"Tempo Total = {tempototal:.2f}")
-            print(f" A Ordenação levou {tempototal:.2f} ms\s")
+            print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
-            print(' Erro Gere o Vetor Primeiro..')
+            print(' Erro. Primeiro gere o vetor.')
     elif int(opcao) == 8:
         if numeros_gerados == True:
-            print("\t [Método ShellSort] VETOR ORDENADO \t")
+            print("\t [Método ShellSort] Ordenando Vetores \t")
             inicio = time.time()
             ShellSort(vetor)
             fim = time.time()
             tempototal = fim - inicio
-            print(f"Início = {inicio:.2f} ms\s")
-            print(f"Fim = {fim:.2f} ms\s")
+            print(f"Início = {inicio:.2f} Segundos")
+            print(f"Fim = {fim:.2f} Segundos")
             print(f"Tempo Total = {tempototal:.2f}")
-            print(f" A Ordenação levou {tempototal:.2f} ms\s")
+            print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
-            print(' Erro Gere o Vetor Primeiro..')
+            print(' Erro. Primeiro gere o vetor.')
 
     elif int(opcao) == 9:
         if numeros_gerados == True:
-            print("\t [Método BucketSort] VETOR ORDENADO \t")
+            print("\t [Método BucketSort] Ordenando Vetores \t")
             inicio = time.time()
             BucketSort(vetor)
             fim = time.time()
             tempototal = fim - inicio
-            print(f"Início = {inicio:.2f} ms\s")
-            print(f"Fim = {fim:.2f} ms\s")
+            print(f"Início = {inicio:.2f} Segundos")
+            print(f"Fim = {fim:.2f} Segundos")
             print(f"Tempo Total = {tempototal:.2f}")
-            print(f" A Ordenação levou {tempototal:.2f} ms\s")
+            print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
-            print(' Erro Gere o Vetor Primeiro..')
+            print(' Erro. Primeiro gere o vetor.')
     elif int(opcao) == 10:
         if numeros_gerados == True:
-            print("\t [Método QuickSort] VETOR ORDENADO \t")
+            print("\t [Método QuickSort] Ordenando Vetores \t")
             inicio = time.time()
             QuickSort(vetor)
             fim = time.time()
             tempototal = fim - inicio
-            print(f"Início = {inicio:.2f} ms\s")
-            print(f"Fim = {fim:.2f} ms\s")
+            print(f"Início = {inicio:.2f} Segundos")
+            print(f"Fim = {fim:.2f} Segundos")
             print(f"Tempo Total = {tempototal:.2f}")
-            print(f" A Ordenação levou {tempototal:.2f} ms\s")
+            print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
-            print(' Erro Gere o Vetor Primeiro..')
+            print(' Erro. Primeiro gere o vetor.')
     else:
-        print("Opcao invalida, digite novamente...")
+        print("Opção inválida, digite novamente...")
     
  
         
