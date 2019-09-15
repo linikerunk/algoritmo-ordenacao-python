@@ -4,6 +4,10 @@
 
 import random
 import time
+import sys
+import sys
+x=1500
+sys.setrecursionlimit(x)
 
 def BubbleSort(vetor):
     for final in range(len(vetor), 0, -1):
@@ -90,25 +94,25 @@ def BucketSort(array):
             indice = indice + 1
 
 
-def particao(array, start, end):
-    follower = leader = start
-    while leader < end:
-        if array[leader] <= array[end]:
-            array[follower], array[leader] = array[leader], array[follower]
-            follower += 1
-        leader += 1
-    array[follower], array[end] = array[end], array[follower]
-    return follower
-
-def _Quicksort(array, start, end):
-    if start >= end:
-        return
-    p = particao(array, start, end)
-    _Quicksort(array, start, p-1)
-    _Quicksort(array, p+1, end)
-    
 def QuickSort(array):
-    _Quicksort(array, 0, len(array)-1)
+    less = []
+    equal = []
+    greater = []
+    # print array
+    if len(array) <= 1:
+        return array
+    else:
+        pivot = array[0]
+        for x in array:
+            if x < pivot:
+                less.append(x)
+            elif x > pivot:
+                greater.append(x)
+            else:
+                equal.append(x)
+        less = QuickSort(less)
+        greater = QuickSort(greater)
+        return greater + equal + less
 
 
 vetor = []
@@ -122,13 +126,14 @@ while (opcao != 0):
     \t 1 - Imprimir Vetor  \n\
     \t 2 - Gerar Vetor  \n \
     \t 3 - Organizar Vetor Ordem Decrescente \n \
-    \t 4 - BubbleSort \n \
-    \t 5 - SelectionSort \n \
-    \t 6 - InsertionSort \n \
-    \t 7 - MergeSort  \n \
-    \t 8 - ShellSort \n \
-    \t 9 - BucketSort \n \
-    \t 10 - Quicksort \n \
+    \t 4 - Organizar o Vetor Ordem Crescente \n \
+    \t 5 - BubbleSort \n \
+    \t 6 - SelectionSort \n \
+    \t 7 - InsertionSort \n \
+    \t 8 - MergeSort  \n \
+    \t 9 - ShellSort \n \
+    \t 10 - BucketSort \n \
+    \t 11 - QuickSort \n \
     \t Opção : '))
 
     if int(opcao) == 0:
@@ -150,7 +155,14 @@ while (opcao != 0):
             vetor = (sorted(vetor, reverse = True))
         else:
             print(' Erro. Primeiro gere o vetor.')
+
     elif int(opcao) == 4:
+        if numeros_gerados == True:
+            vetor = (sorted(vetor))
+        else:
+            print(' Erro. Primeiro gere o vetor.')
+
+    elif int(opcao) == 5:
         if numeros_gerados == True:
             print("\t [Método BubbleSort] Ordenando Vetores \t")
             inicio = time.time()
@@ -163,7 +175,7 @@ while (opcao != 0):
             print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
             print(' Erro. Primeiro gere o vetor.')
-    elif int(opcao) == 5:
+    elif int(opcao) == 6:
         if numeros_gerados == True:
             print("\t [Método SelectionSort] Ordenando Vetores \t")
             inicio = time.time()
@@ -176,7 +188,7 @@ while (opcao != 0):
             print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
             print(' Erro. Primeiro gere o vetor.')
-    elif int(opcao) == 6:
+    elif int(opcao) == 7:
         if numeros_gerados == True:
             print("\t [Método InsertionSort] Ordenando Vetores \t")
             inicio = time.time()
@@ -189,7 +201,7 @@ while (opcao != 0):
             print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
             print(' Erro. Primeiro gere o vetor.')
-    elif int(opcao) == 7:
+    elif int(opcao) == 8:
         if numeros_gerados == True:
             print("\t [Método MergeSort] Ordenando Vetores \t")
             inicio = time.time()
@@ -202,7 +214,7 @@ while (opcao != 0):
             print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
             print(' Erro. Primeiro gere o vetor.')
-    elif int(opcao) == 8:
+    elif int(opcao) == 9:
         if numeros_gerados == True:
             print("\t [Método ShellSort] Ordenando Vetores \t")
             inicio = time.time()
@@ -216,7 +228,7 @@ while (opcao != 0):
         else:
             print(' Erro. Primeiro gere o vetor.')
 
-    elif int(opcao) == 9:
+    elif int(opcao) == 10:
         if numeros_gerados == True:
             print("\t [Método BucketSort] Ordenando Vetores \t")
             inicio = time.time()
@@ -229,7 +241,7 @@ while (opcao != 0):
             print(f" A Ordenação levou {tempototal:.2f} Segundos")
         else:
             print(' Erro. Primeiro gere o vetor.')
-    elif int(opcao) == 10:
+    elif int(opcao) == 11:
         if numeros_gerados == True:
             print("\t [Método QuickSort] Ordenando Vetores \t")
             inicio = time.time()
